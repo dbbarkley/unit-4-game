@@ -59,13 +59,6 @@ body {
     color: white;
     font-size: 40px;
 }
-.hidden_text {
-    position: relative;
-    margin: 10px;
-    color: black;
-    font-size: 80px;
-}
-
 /* CSS for Crystals, Hover and Avtive effects ================== */
 
 .red-crystal, .blue-crystal, .green-crystal, .orange-crystal{
@@ -112,7 +105,25 @@ body {
 .orange-crystal:active {
     filter: brightness(80%);
 }
-
 /* CSS for Media Queries ======================================= */
 
-
+@media screen and (max-width: 980px) {
+    .game_score {   
+        margin-top: -8.2%;
+        margin-left: 17%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .game_score {   
+        margin-top: -10.4%;
+        margin-left: 17.5%;
+        width: 12.5%;
+    }
+}
+@media screen and (max-width: 640px) {
+    .game_score {   
+        margin-top: -12.5%;
+        margin-left: 18%;
+        width: 12%;
+    }
+}
