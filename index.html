@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="images/blue_crystal_favicon.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -13,9 +14,9 @@
         Crystal Collector!
     </div>
         <div class="game_bio">
-            <p>You will be given a random number at the start of the game.</p>
+            <p>You will be given a random number (between 19-120) at the start of the game.</p>
                 <br>
-                    <p>There are four scrstals below. By clicking on a crystal you will 
+                    <p>There are four crystals below. By clicking on a crystal you will 
                        add a specific amount of points to your total score.</p>
                          <br>
                            <p>You win the game by matching your total score to the random number, 
@@ -23,7 +24,8 @@
                          <br>
                      <p>The value of each crystal is hidden from you until you click on it.</p>
                 <br>
-             <p>Each time when the game starts, the game will change the values of each crystal.</p>
+             <p>Every time you win or lose, the game will automatically restart with a new random number and new 
+                values for each crystal.</p>
           <br>
         </div>
     <div class="number">
@@ -40,6 +42,7 @@
                     <img class="green-crystal" src="assets/images/green_crystal.png">
                 <img class="orange-crystal" src="assets/images/orange_crystal.png">
             </div>
+            <div id="game-text"></div>
         <div class="score_text">
             Your total score is:
         </div>

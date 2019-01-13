@@ -17,12 +17,12 @@ function newNumberToGuess() {
 function win() {
     wins += 1;
     $("#wins").text(wins);
-    alert("You Win!");
+    $("#game-text").text("🎉 You Win! 🎉")
 }
 function lose() {
     losses += 1;
     $("#losses").text(losses);
-    alert("You Lose!"); 
+    $("#game-text").text("😥 You Lost! 😥")
 }
 // Function to reset the game var's once the user wins/losses ======
 function reset() {
@@ -41,6 +41,7 @@ function gameFunction() {
     $(".red-crystal").on("click", function() {
         counter += redCrystalValue;
         $("#user_score").text(counter);  
+        $("#game-text").text("");
         if (counter === scoreToGuess) {
             win();
             reset();
@@ -52,7 +53,8 @@ function gameFunction() {
     // Blue crystal logic
     $(".blue-crystal").on("click", function() {
         counter += blueCrystalValue;
-        $("#user_score").text(counter);  
+        $("#user_score").text(counter);
+        $("#game-text").text("");
         if (counter === scoreToGuess) {
             win();
             reset();
@@ -64,7 +66,8 @@ function gameFunction() {
     // Green crystal logic
     $(".green-crystal").on("click", function() {
         counter += greenCrystalValue;
-        $("#user_score").text(counter);  
+        $("#user_score").text(counter);
+        $("#game-text").text(""); 
         if (counter === scoreToGuess) {
             win();
             reset();
@@ -76,7 +79,8 @@ function gameFunction() {
     // Orange crystal logic
     $(".orange-crystal").on("click", function() {
         counter += orangeCrystalValue;
-        $("#user_score").text(counter);  
+        $("#user_score").text(counter);
+        $("#game-text").text("");  
         if (counter === scoreToGuess) {
             win();
             reset();
